@@ -91,7 +91,7 @@ export default function Page() {
               </p>
             </BlurFade>
 
-            <div className="flex flex-wrap w-full gap-3 justify-between">
+            <div className="flex flex-wrap w-full gap-2 justify-between items-center">
               {Object.entries(DATA.contact.social)
                 .filter(([_, social]) => social.navbar)
                 .map(([name, social], i) => (
@@ -114,10 +114,10 @@ export default function Page() {
                 ))}
               <BlurFade delay={BLUR_FADE_DELAY * 36}>
                 <a
-                  href={"/nmayur/Mayur Nalwala.pdf"}
+                  href={"/nmayur/Mayur Nalwala - Frontend Engineer.pdf"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 mb-2 text-muted-foreground hover:text-blue-500"
+                  className="flex items-center gap-2 mb-2 text-white bg-blue-800 rounded-sm px-2 py-1 hover:-translate-y-1 transition-all"
                 >
                   <span className="transition-all text-pretty text-xm ">
                     Resume
